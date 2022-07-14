@@ -1,3 +1,13 @@
+<?php
+require_once("../../config/connection.php");
+
+if (isset($_POST["send"]) and $_POST["send"] == "yes") {
+    require_once("../../models/Users.php");
+
+    $users = new Users();
+    $users->Login();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,9 +36,36 @@
             <div class="card-body">
                 <p class="login-box-msg">Inicie su sesión</p>
 
-                <form action="../Dashboard/" method="post">
+                <form action="" method="post" id="login_form">
+                    <?php
+                    if (isset($_GET["m"])) {
+                        switch ($_GET["m"]) {
+                            case "1";
+                    ?>
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>El Usuario</strong> y/o <strong>Contraseña</strong> son incorrectos.
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            <?php
+                                break;
+
+                            case "2";
+                            ?>
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>Los Campos</strong> estan vacios.
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                    <?php
+                                break;
+                        }
+                    }
+                    ?>
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
@@ -36,7 +73,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
@@ -54,7 +91,8 @@
                         </div>
                         <!-- /.col -->
                         <div class="col-5">
-                            <button type="submit" class="btn btn-primary btn-block" onclick="go_dashboard()">Iniciar Sesión</button>
+                            <input type="hidden" name="send" class="form-control" value="yes" />
+                            <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
                         </div>
                         <!-- /.col -->
                     </div>
@@ -67,7 +105,7 @@
                     </div>
                     <div class="d-flex justify-content-center">
                         <p class="mb-0">
-                            <a href="../../index.php" class="text-center">Regresar</a>
+                            <a href="#" class="text-center">Regresar</a>
                         </p>
                     </div>
                 </div>
@@ -85,8 +123,8 @@
     <!-- AdminLTE App -->
     <script src="../../public/adminlte/dist/js/adminlte.min.js"></script>
     <script>
-        function go_dashboard(){
-            window.location.href="../Dashboard/"
+        function go_dashboard() {
+            window.location.href = "../Dashboard/"
         }
     </script>
 </body>

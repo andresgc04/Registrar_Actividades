@@ -9,7 +9,7 @@ class Connect
     {
         try
         {
-            $connect = $this -> dbh = new PDO("mysql:local=localhost;dbname=","root","");
+            $connect = $this -> dbh = new PDO("mysql:local=localhost;dbname=users_activitiesdb","root","");
             return $connect;
         }
         catch(Exception $ex)
