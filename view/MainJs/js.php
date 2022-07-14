@@ -6,8 +6,23 @@
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
+<!-- jQuery -->
+<script src="../../public/adminlte/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../public/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../public/adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../public/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../public/adminlte/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../public/adminlte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../public/adminlte/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../public/adminlte/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../public/adminlte/plugins/jszip/jszip.min.js"></script>
+<script src="../../public/adminlte/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../public/adminlte/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../public/adminlte/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../public/adminlte/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../public/adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <!-- ChartJS -->
 <script src="../../public/adminlte/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->

@@ -62,7 +62,7 @@
           </li>
           <li class="nav-header">Mantenimientos</li>
           <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
+            <a href="../HomeCompanies/" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Compañias
