@@ -22,3 +22,6 @@
   <link rel="stylesheet" href="../../public/adminlte/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="../../public/adminlte/plugins/summernote/summernote-bs4.min.css">
+  <!--sweetalert2-->
+  <link rel="stylesheet" href="../../public/adminlte/plugins/sweetalert2/sweetalert2.css">
+  <link rel="stylesheet" href="../../public/adminlte/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.css">

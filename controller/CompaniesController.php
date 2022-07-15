@@ -5,8 +5,8 @@ require_once("../models/Companies.php");
 $companies = new Companies();
 
 switch ($_GET["op"]){
-    case "insert":
-        $companies -> insert_companies($_POST[""], $_POST[""],$_POST[""]);
+    case "insert_company":
+        $companies -> insert_companies($_POST["companyName"], $_POST["abbreviationCompany"]);
         break;
     case "list_companies":
         $datas = $companies ->list_companies();

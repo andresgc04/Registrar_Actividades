@@ -53,3 +53,11 @@ $(document).ready(function () {
       },
   }).DataTable();
 });
+
+const goNewCompanyForm = () => {
+  document.location.href = "../NewCompany/";
+}
+
+const goNewCompanyBtn = document.getElementById("goNewCompanyBtn");
+
+goNewCompanyBtn.addEventListener("click", goNewCompanyForm);

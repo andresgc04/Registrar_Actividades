@@ -35,7 +35,7 @@
                 <div class="container-fluid">
                     <section class="mt-2 mb-3">
                         <div class="d-flex justify-content-end">
-                            <button type="button" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Nueva Compañia</button>
+                            <button id="goNewCompanyBtn" type="button" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Nueva Compañia</button>
                         </div>
                     </section>
                     <!-- Main row -->
