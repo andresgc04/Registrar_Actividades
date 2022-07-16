@@ -32,4 +32,16 @@ class Companies extends Connect
 
         return $result = $sql->fetchAll();
     }
+
+    public function getCompanies()
+    {
+        $connect = parent::Connection();
+        parent::set_names();
+
+        $sql = "SELECT * FROM companies WHERE State_ID = 1;";
+        $sql = $connect -> prepare($sql);
+        $sql->execute();
+
+        return $result = $sql -> fetchAll();
+    }
 }

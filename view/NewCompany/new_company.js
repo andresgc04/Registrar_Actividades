@@ -20,18 +20,15 @@ function Save_Edit(e) {
       $("#abbreviationCompany").val("");
       console.log(datas);
       Swal.fire({
-        position: "top-end",
+        position: "center",
         icon: "success",
-        title: "Your work has been saved",
+        title: "Compañia registrada correctamente",
         showConfirmButton: false,
         timer: 1500,
         timerProgressBar: true,
-        didOpen : (toast) => {
-            function goHomeCompanies () {
-                window.location.href="../HomeCompanies/";
-            }
-            toast.addEventListener("click", goHomeCompanies)
-        }
+        willClose: () => {
+          window.location.href = "../../view/HomeCompanies/";
+        },
       });
     },
     error: function (datos) {

@@ -10,6 +10,8 @@
 <script src="../../public/adminlte/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../public/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="../../public/adminlte/plugins/select2/js/select2.full.min.js"></script>
 <!-- DataTables  & Plugins -->
 <script src="../../public/adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="../../public/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -52,3 +54,6 @@
 <script src="../../public/adminlte/plugins/jquery-validation/additional-methods.min.js"></script>
 <!-- Sweetalert-->
 <script src="../../public/adminlte/plugins/sweetalert2/sweetalert2.all.js"></script>
+<!-- InputMask -->
+<script src="../../public/adminlte/plugins/moment/moment.min.js"></script>
+<script src="../../public/adminlte/plugins/inputmask/jquery.inputmask.min.js"></script>
