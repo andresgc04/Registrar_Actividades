@@ -11,10 +11,17 @@ $(document).ready(function () {
       $("#companyID").html(data);
     }
   );
+
+  $.post(
+    "../../controller/FacilitiesController.php?op=get_facilities_comboBox",
+    function (data, status) {
+      $("#facilityID").html(data);
+    }
+  );
 });
 
 function init() {
-  $("#facilityForm").on("submit", function (e) {
+  $("#departmentForm").on("submit", function (e) {
     Save_Edit(e);
   });
 }
@@ -22,26 +29,26 @@ function init() {
 function Save_Edit(e) {
   e.preventDefault();
 
-  var facilityFormData = new FormData($("#facilityForm")[0]);
+  var departmentFormData = new FormData($("#departmentForm")[0]);
 
   $.ajax({
-    url: "../../controller/FacilitiesController.php?op=insert_facility",
+    url: "../../controller/DepartmentsController.php?op=insert_department",
     type: "POST",
-    data: facilityFormData,
+    data: departmentFormData,
     contentType: false,
     processData: false,
     success: function (datas) {
-      $("#facilityName").val("");
-      $("#abbreviationFacility").val("");
+      $("#departmentName").val("");
+      $("#abbreviationDepartment").val("");
       Swal.fire({
         position: "center",
         icon: "success",
-        title: "Sub-Compañia registrada correctamente",
+        title: "Departamento registrado correctamente",
         showConfirmButton: false,
         timer: 1500,
         timerProgressBar: true,
         willClose: () => {
-          window.location.href = "../../view/HomeFacilities/";
+          window.location.href = "../../view/HomeDepartments/";
         },
       });
     },
@@ -57,16 +64,19 @@ $(function () {
       init();
     },
   });
-  $("#facilityForm").validate({
+  $("#departmentForm").validate({
     rules: {
       companyID: {
         required: true,
       },
-      facilityName: {
+      facilityID: {
+        required: true,
+      },
+      departmentName: {
         required: true,
         minlength: 1,
       },
-      abbreviationFacility: {
+      abbreviationDepartment: {
         required: true,
         minlength: 1,
       },
@@ -75,15 +85,18 @@ $(function () {
       companyID: {
         required: "Porfavor seleccione una compañia.",
       },
-      facilityName: {
-        required: "Porfavor ingrese el nombre de la sub-compañia",
-        minlength: "El nombre de la sub-compañia debe ser mayor de 1 caracter.",
+      facilityID: {
+        required: "Porfavor seleccione una sub-compañia.",
       },
-      abbreviationFacility: {
+      departmentName: {
+        required: "Porfavor ingrese el nombre del departamento",
+        minlength: "El nombre del departamento debe ser mayor de 1 caracter.",
+      },
+      abbreviationDepartment: {
         required:
-          "Porfavor ingrese la abreviatura del nombre de la sub-compañia",
+          "Porfavor ingrese la abreviatura del nombre del departamento",
         minlength:
-          "La abreviatura del nombre de la sub-compañia debe ser mayor de 1 caracter.",
+          "La abreviatura del nombre del departamento debe ser mayor de 1 caracter.",
       },
     },
     errorElement: "span",

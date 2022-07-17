@@ -24,13 +24,25 @@ class Facilities extends Connect
 
         $sql = "SELECT facilities.Facility_ID, companies.Company_Name,facilities.Facility_Name,
                        facilities.Abbreviation_Facility, states.State
-                FROM `facilities` facilities
-                INNER JOIN `companies` companies
+                FROM facilities facilities
+                INNER JOIN companies companies
                 ON facilities.Company_ID = companies.Company_ID
-                INNER JOIN `states` states
+                INNER JOIN states states
                 ON facilities.State_ID = states.State_ID
                 WHERE facilities.State_ID = 1;";
 
+        $sql = $connect->prepare($sql);
+        $sql->execute();
+
+        return $result = $sql->fetchAll();
+    }
+
+    public function getFacilitiesComboBox()
+    {
+        $connect = parent::Connection();
+        parent::set_names();
+
+        $sql = "SELECT * FROM facilities WHERE State_ID = 1;";
         $sql = $connect->prepare($sql);
         $sql->execute();
 

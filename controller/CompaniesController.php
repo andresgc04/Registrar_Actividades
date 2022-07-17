@@ -8,7 +8,7 @@ switch ($_GET["op"]) {
     case "insert_company":
         $companies->insert_companies($_POST["companyName"], $_POST["abbreviationCompany"]);
         break;
-    case "get_comapanies":
+    case "get_companies":
         $datas = $companies->getCompanies();
         if (is_array($datas) == true and count($datas) > 0) {
             foreach ($datas as $row) {
@@ -29,10 +29,10 @@ switch ($_GET["op"]) {
             $sub_array[] = $row["Abbreviation_Company"];
 
             if ($row["State"] == "Activo") {
-                $sub_array[] = '<span class="badge badge-primary">Abierto</span>';
+                $sub_array[] = '<span class="badge badge-primary">Activo</span>';
             }
             if ($row["State"] == "Eliminado") {
-                $sub_array[] = '<span class="badge badge-danger">Abierto</span>';
+                $sub_array[] = '<span class="badge badge-danger">Eliminado</span>';
             }
 
             $sub_array[] = '<button type="button" onClick="ver(' . $row["Company_ID"] . ');" id="' . $row["Company_ID"] . '" class="btn btn-inline btn-primary btn-sm ladda-button"><div><i class="fa fa-eye"></i></div></button>';

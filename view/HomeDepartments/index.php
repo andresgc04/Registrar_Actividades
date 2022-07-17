@@ -39,7 +39,7 @@ if (isset($_SESSION["User_ID"])) {
                     <div class="container-fluid">
                         <section class="mt-2 mb-3">
                             <div class="d-flex justify-content-end">
-                                <button id="goNewCompanyBtn" type="button" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Nueva Compañia</button>
+                                <button id="goNewDepartmentBtn" type="button" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Nuevo Departamento</button>
                             </div>
                         </section>
                         <!-- Main row -->
@@ -51,17 +51,19 @@ if (isset($_SESSION["User_ID"])) {
                                     <div class="card-header">
                                         <h3 class="card-title">
                                             <i class="fas fa-building"></i>
-                                            Compañias
+                                            Departamentos
                                         </h3>
                                     </div><!-- /.card-header -->
                                     <div class="card-body">
                                         <div class="table-responsive">
-                                            <table id="companies_table" class="table table-striped table-hover">
+                                            <table id="departments_table" class="table table-striped table-hover">
                                                 <thead>
                                                     <tr>
                                                         <th>#</th>
                                                         <th>Compañia</th>
-                                                        <th>Abreviatura de Compañia</th>
+                                                        <th>Sub-Compañia</th>
+                                                        <th>Departamento</th>
+                                                        <th>Abreviatura del Departamento</th>
                                                         <th>Estado</th>
                                                         <th>Acciones</th>
                                                     </tr>
@@ -92,7 +94,7 @@ if (isset($_SESSION["User_ID"])) {
         <!--Wrapper End-->
 
         <?php require_once("../MainJs/js.php"); ?>
-        <script type="text/javascript" src="home_companies.js"></script>
+        <script type="text/javascript" src="home_departments.js"></script>
     </body>
 
     </html>
