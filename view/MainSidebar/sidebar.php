@@ -62,28 +62,33 @@
           </li>
           <li class="nav-header">Mantenimientos</li>
           <li class="nav-item">
-            <a href="../HomeCompanies/" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
+            <a href="#" class="nav-link">
+              <i class="fas fa-building"></i>
               <p>
-                Compañias
+                Entidades
+                <i class="fas fa-angle-left right"></i>
               </p>
             </a>
-          </li>
-          <li class="nav-item">
-            <a href="../HomeFacilities/" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
-              <p>
-                Sub-Compañias
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/kanban.html" class="nav-link">
-              <i class="nav-icon fas fa-columns"></i>
-              <p>
-                Departamentos
-              </p>
-            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../HomeCompanies/" class="nav-link">
+                  <i class="fas fa-building"></i>
+                  <p>Compañias</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../HomeFacilities/" class="nav-link">
+                  <i class="fas fa-building"></i>
+                  <p>Sub-Compañias</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../HomeDepartments/" class="nav-link">
+                  <i class="fas fa-building"></i>
+                  <p>Departamentos</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="pages/kanban.html" class="nav-link">
