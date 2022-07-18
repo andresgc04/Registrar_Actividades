@@ -1,3 +1,8 @@
+<?php
+require_once("../../config/connection.php");
+if(isset($_SESSION["User_ID"]))
+{
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -622,5 +627,11 @@
 
     <?php require_once("../MainJs/js.php"); ?>
 </body>
-
 </html>
+<?php
+}
+else
+{
+    header("Location:".Connect::route()."index.php");
+}
+?>
