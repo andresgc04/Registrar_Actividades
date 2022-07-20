@@ -73,13 +73,13 @@
               <li class="nav-item">
                 <a href="../HomeCompanies/" class="nav-link">
                   <i class="fas fa-building"></i>
-                  <p>Compañias</p>
+                  <p>Districtos</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../HomeFacilities/" class="nav-link">
                   <i class="fas fa-building"></i>
-                  <p>Sub-Compañias</p>
+                  <p>Sub-Districtos</p>
                 </a>
               </li>
               <li class="nav-item">

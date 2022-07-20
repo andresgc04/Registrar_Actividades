@@ -60,8 +60,8 @@ if (isset($_SESSION["User_ID"])) {
                                                 <thead>
                                                     <tr>
                                                         <th>#</th>
-                                                        <th>Compañia</th>
-                                                        <th>Abreviatura de Compañia</th>
+                                                        <th>Districto</th>
+                                                        <th>Abreviatura del Districto</th>
                                                         <th>Estado</th>
                                                         <th>Acciones</th>
                                                     </tr>

@@ -60,22 +60,16 @@ if (isset($_SESSION["User_ID"])) {
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="startDate">Fecha de Inicio:</label>
-                                                        <div class="input-group date" id="startDate" data-target-input="nearest">
-                                                            <input type="text" id="startDate" name="startDate" class="form-control datetimepicker-input" data-target="#startDate" />
-                                                            <div class="input-group-append" data-target="#startDate" data-toggle="datetimepicker">
-                                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                                            </div>
+                                                        <div class="input-group" id="startDate">
+                                                            <input type="date" id="startDate" name="startDate" class="form-control" />
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="endDate">Fecha de Finalización:</label>
-                                                        <div class="input-group date" id="endDate" data-target-input="nearest">
-                                                            <input type="text" id="endDate" name="endDate" class="form-control datetimepicker-input" data-target="#endDate" />
-                                                            <div class="input-group-append" data-target="#endDate" data-toggle="datetimepicker">
-                                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                                            </div>
+                                                        <div class="input-group">
+                                                            <input type="date" id="endDate" name="endDate" class="form-control"/>
                                                         </div>
                                                     </div>
                                                 </div>

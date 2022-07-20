@@ -53,14 +53,14 @@ if (isset($_SESSION["User_ID"])) {
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="companyID">Compañia:</label>
+                                                        <label for="companyID">Districto:</label>
                                                         <select id="companyID" name="companyID" class="form-control select2" style="width: 100%;">
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="facilityID">Sub-Compañia:</label>
+                                                        <label for="facilityID">Sub-Districto:</label>
                                                         <select id="facilityID" name="facilityID" class="form-control select2" style="width: 100%;">
                                                         </select>
                                                     </div>

@@ -39,9 +39,9 @@ switch ($_GET["op"]) {
             $sub_array[] = $row["Company_Name"];
             $sub_array[] = $row["Facility_Name"];
             $sub_array[] = $row["Department_Name"];
+            $sub_array[] = $row["Activity_Name"];
             $sub_array[] = $row["Start_Date"];
             $sub_array[] = $row["End_Date"];
-            $sub_array[] = $row["Activity_Name"];
 
             if ($row["State"] == "Activo") {
                 $sub_array[] = '<span class="badge badge-primary">Activo</span>';
@@ -50,7 +50,13 @@ switch ($_GET["op"]) {
                 $sub_array[] = '<span class="badge badge-danger">Eliminado</span>';
             }
 
-            $sub_array[] = '<button type="button" onClick="ver(' . $row["Activity_ID"] . ');" id="' . $row["Activity_ID"] . '" class="btn btn-inline btn-primary btn-sm ladda-button"><div><i class="fa fa-eye"></i></div></button>';
+            $sub_array[] = '<button type="button" onClick="createReport(' . $row["Activity_ID"] . ');" id="' . $row["Activity_ID"] . '" class="btn btn-inline btn-primary btn-sm ladda-button"><div><i class="fa fa-eye"></i></div></button>
+                            <script>
+                            function createReport(activityID)
+                            {
+                                console.log(activityID);
+                            }
+                            </script>';
 
             $data[] = $sub_array;
         }

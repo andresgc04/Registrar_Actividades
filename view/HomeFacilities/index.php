@@ -61,9 +61,9 @@ if(isset($_SESSION["User_ID"]))
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>Compañia</th>
-                                                    <th>Sub-Compañia</th>
-                                                    <th>Abreviatura de la Sub-Compañia</th>
+                                                    <th>Districto</th>
+                                                    <th>Sub-Districto</th>
+                                                    <th>Abreviatura de la Sub-Districto</th>
                                                     <th>Estado</th>
                                                     <th>Acciones</th>
                                                 </tr>

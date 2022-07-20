@@ -53,20 +53,20 @@ if (isset($_SESSION["User_ID"])) {
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="companyID">Compañia:</label>
+                                                        <label for="companyID">Districto:</label>
                                                         <select id="companyID" name="companyID" class="form-control select2" style="width: 100%;">
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="facilityName">Nombre de la Sub-Compañia:</label>
+                                                        <label for="facilityName">Nombre del Sub-Districto:</label>
                                                         <input type="text" id="facilityName" name="facilityName" class="form-control" placeholder="Ingrese el nombre de la sub-compañia">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="abbreviationFacility">Abreviatura del Nombre de la Sub-Compañia:</label>
+                                                        <label for="abbreviationFacility">Abreviatura del Nombre del Sub-Districto:</label>
                                                         <input type="text" id="abbreviationFacility" name="abbreviationFacility" class="form-control" placeholder="Ingrese la abreviatura del nombre de la sub-compañia">
                                                     </div>
                                                 </div>

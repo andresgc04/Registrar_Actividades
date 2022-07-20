@@ -51,11 +51,11 @@ if(isset($_SESSION["User_ID"])){
                                 <form id="companyForm" method="POST">
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label for="companyName">Nombre de la Compañia:</label>
+                                            <label for="companyName">Nombre del Districto:</label>
                                             <input type="text" id="companyName" name="companyName" class="form-control" placeholder="Ingrese el nombre de la compañia">
                                         </div>
                                         <div class="form-group">
-                                            <label for="abbreviationCompany">Abreviatura del Nombre de la Compañia:</label>
+                                            <label for="abbreviationCompany">Abreviatura del Nombre del Districto:</label>
                                             <input type="text" id="abbreviationCompany" name="abbreviationCompany" class="form-control" placeholder="Ingrese la abreviatura del nombre de la compañia">
                                         </div>
                                     </div>
