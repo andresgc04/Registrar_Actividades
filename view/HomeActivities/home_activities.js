@@ -69,3 +69,10 @@ const goNewActivityForm = () => {
 const goNewActivityBtn = document.getElementById("goNewActivityBtn");
 
 goNewActivityBtn.addEventListener("click", goNewActivityForm);
+
+function createReport(activityID) {
+  window.location.href =
+    "http://localhost:80/Registrar_Actividades/view/Reports/ActivitiesReports/?ID=" +
+    activityID +
+    "";
+}

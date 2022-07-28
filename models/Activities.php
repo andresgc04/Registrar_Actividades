@@ -74,4 +74,33 @@ class Activities extends Connect
 
         return $result = $sql->fetchAll();
     }
+
+    public function getActivityById($ActivityID)
+    {
+        $connect = parent::Connection();
+        parent::set_names();
+
+        $sql = "SELECT activities.Date_Creation,activities.Activity_Name, activities.Start_Date, activities.End_Date, activities.Number_Hours, activities.Start_Time, activities.End_Time, activities.Purpose, activities.Responsible, activities.Cost, activities.Location_Activity, employees.First_Name, employees.Second_Name, employees.First_Surname, employees.Second_Surname
+                 FROM activities activities
+                 INNER JOIN companies companies
+                 ON activities.Company_ID = companies.Company_ID
+                 INNER JOIN facilities facilities
+                 ON activities.Facility_ID = facilities.Facility_ID
+                 INNER JOIN departments departments
+                 ON activities.Department_ID = departments.Department_ID
+                 INNER JOIN states states
+                 ON activities.State_ID = states.State_ID
+                 INNER JOIN users users
+                 ON activities.Created_By = users.User_ID
+                 INNER JOIN employees employees
+                 ON users.Employee_ID = employees.Employee_ID
+                 WHERE activities.State_ID = 1
+                 AND activities.Activity_ID = ?;";
+
+        $sql = $connect->prepare($sql);
+        $sql -> bindValue(1, $ActivityID);
+        $sql->execute();
+
+        return $result = $sql->fetchAll();
+    }
 }
