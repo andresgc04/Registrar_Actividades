@@ -63,7 +63,6 @@ if(isset($_SESSION["User_ID"]))
                                                     <th>#</th>
                                                     <th>Profesion</th>
                                                     <th>Estado</th>
-                                                    <th>Creado Por</th>
                                                     <th>Acciones</th>
                                                 </tr>
                                             </thead>

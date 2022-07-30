@@ -1,31 +1,31 @@
 <?php
 require_once("../config/connection.php");
-require_once("../models/Professions.php");
+require_once("../models/Roles.php");
 
-$professions = new Professions();
+$roles = new Roles();
 
 switch ($_GET["op"]) {
-    case "insert_profession":
-        $professions->insert_profession($_POST["profession"]);
+    case "insert_rol":
+        $roles->insert_rol($_POST["rol"]);
         break;
-    case "get_professions_comboBox":
-        $datas = $professions->getProfessionsComboBox();
+    case "get_roles_comboBox":
+        $datas = $roles->getRolesComboBox();
         if (is_array($datas) == true and count($datas) > 0) {
             foreach ($datas as $row) {
-                $html .= "<option value = '" . $row['Profession_ID'] . "'>" . $row['Profession'] . "</option>";
+                $html .= "<option value = '" . $row['Rol_ID'] . "'>" . $row['Rol'] . "</option>";
             }
 
             echo $html;
         }
         break;
-    case "list_professions":
-        $datas = $professions->list_professions();
+    case "list_roles":
+        $datas = $roles->list_roles();
         $data = array();
 
         foreach ($datas as $row) {
             $sub_array = array();
-            $sub_array[] = $row["Profession_ID"];
-            $sub_array[] = $row["Profession"];
+            $sub_array[] = $row["Rol_ID"];
+            $sub_array[] = $row["Rol"];
 
             if ($row["State"] == "Activo") {
                 $sub_array[] = '<span class="badge badge-primary">Activo</span>';
@@ -34,7 +34,7 @@ switch ($_GET["op"]) {
                 $sub_array[] = '<span class="badge badge-danger">Eliminado</span>';
             }
 
-            $sub_array[] = '<button type="button" onClick="ver(' . $row["Profession_ID"] . ');" id="' . $row["Profession_ID"] . '" class="btn btn-inline btn-primary btn-sm ladda-button"><div><i class="fa fa-eye"></i></div></button>';
+            $sub_array[] = '<button type="button" onClick="ver(' . $row["Rol_ID"] . ');" id="' . $row["Rol_ID"] . '" class="btn btn-inline btn-primary btn-sm ladda-button"><div><i class="fa fa-eye"></i></div></button>';
 
             $data[] = $sub_array;
         }
