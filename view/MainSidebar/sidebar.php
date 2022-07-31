@@ -38,7 +38,7 @@
           <li class="nav-header">Gestiones</li>
           <li class="nav-item">
             <a href="../HomeActivities/" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-tasks"></i>
               <p>
                 Actividades
               </p>
@@ -46,7 +46,7 @@
           </li>
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-users"></i>
               <p>
                 Empleados
               </p>
@@ -54,7 +54,7 @@
           </li>
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-user-circle"></i>
               <p>
                 Usuarios
               </p>
@@ -63,7 +63,7 @@
           <li class="nav-header">Mantenimientos</li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="fas fa-building"></i>
+              <i class="nav-icon fas fa-building"></i>
               <p>
                 Entidades
                 <i class="fas fa-angle-left right"></i>
@@ -72,19 +72,19 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="../HomeCompanies/" class="nav-link">
-                  <i class="fas fa-building"></i>
+                  <i class="nav-icon fas fa-building"></i>
                   <p>Districtos</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../HomeFacilities/" class="nav-link">
-                  <i class="fas fa-building"></i>
+                  <i class="nav-icon fas fa-building"></i>
                   <p>Sub-Districtos</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../HomeDepartments/" class="nav-link">
-                  <i class="fas fa-building"></i>
+                  <i class="nav-icon fas fa-building"></i>
                   <p>Departamentos</p>
                 </a>
               </li>
@@ -92,7 +92,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="fas fa-globe-americas"></i>
+              <i class="nav-icon fas fa-globe-americas"></i>
               <p>
                 Localizaciones
                 <i class="fas fa-angle-left right"></i>
@@ -101,31 +101,31 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="../HomeCountries/" class="nav-link">
-                  <i class="far fa-flag"></i>
+                  <i class="nav-icon far fa-flag"></i>
                   <p>Paises</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../HomeCities/" class="nav-link">
-                  <i class="fas fa-city"></i>
+                  <i class="nav-icon fas fa-city"></i>
                   <p>Ciudades</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../HomeProvinces/" class="nav-link">
-                  <i class="fas fa-city"></i>
+                  <i class="nav-icon fas fa-city"></i>
                   <p>Provincias</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../HomeMunicipalities/" class="nav-link">
-                  <i class="fas fa-city"></i>
+                  <i class="nav-icon fas fa-city"></i>
                   <p>Municipios</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../HomeDepartments/" class="nav-link">
-                  <i class="fas fa-city"></i>
+                <a href="../HomeSectors/" class="nav-link">
+                  <i class="nav-icon fas fa-city"></i>
                   <p>Sectores</p>
                 </a>
               </li>
@@ -133,7 +133,7 @@
           </li>
           <li class="nav-item">
             <a href="../HomeProfessions/" class="nav-link">
-              <i class="fas fa-user-tie"></i>
+              <i class="nav-icon fas fa-user-tie"></i>
               <p>
                 Profesiones
               </p>
@@ -141,7 +141,7 @@
           </li>
           <li class="nav-item">
             <a href="../HomePositions/" class="nav-link">
-              <i class="fas fa-chalkboard-teacher"></i>
+              <i class="nav-icon fas fa-chalkboard-teacher"></i>
               <p>
                 Posiciones
               </p>
@@ -149,7 +149,7 @@
           </li>
           <li class="nav-item">
             <a href="../HomeRoles/" class="nav-link">
-              <i class="fas fa-user-tag"></i>
+              <i class="nav-icon fas fa-user-tag"></i>
               <p>
                 Roles
               </p>
@@ -157,7 +157,7 @@
           </li>
           <li class="nav-item">
             <a href="../HomeStates/" class="nav-link">
-              <i class="nav-icon fas fa-columns"></i>
+              <i class="nav-icon nav-icon fas fa-columns"></i>
               <p>
                 Estados
               </p>

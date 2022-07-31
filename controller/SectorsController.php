@@ -1,36 +1,37 @@
 <?php
 require_once("../config/connection.php");
-require_once("../models/Municipalities.php");
+require_once("../models/Sectors.php");
 
-$municipalities = new Municipalities();
+$sectors = new Sectors();
 
 switch ($_GET["op"]) {
-    case "insert_municipalities":
-        $municipalities->insert_municipalities($_POST["provinceID"],$_POST["municipalityName"]);
+    case "insert_sector":
+        $sectors->insert_sector($_POST["municipalityID"],$_POST["sectorName"]);
         break;
-    case "get_municipalities_comboBox":
-        $datas = $municipalities->getMunicipalitiesComboBox();
+    case "get_sectors_comboBox":
+        $datas = $sectors->getSectorsComboBox();
         if (is_array($datas) == true and count($datas) > 0) {
             foreach ($datas as $row) {
-                $html .= "<option value = '" . $row['Municipality_ID'] . "'>" . $row['Municipality_Name'] . "</option>";
+                $html .= "<option value = '" . $row['Sector_ID'] . "'>" . $row['Sector_Name'] . "</option>";
             }
 
             echo $html;
         }
         break;
-    case "list_municipalities":
-        $datas = $municipalities->list_municipalities();
+    case "list_sectors":
+        $datas = $sectors->list_sectors();
         $data = array();
 
         foreach ($datas as $row) {
             $sub_array = array();
-            $sub_array[] = $row["Municipality_ID"];
+            $sub_array[] = $row["Sector_ID"];
             $sub_array[] = $row["Country_Name"];
             $sub_array[] = $row["City_Name"];
             $sub_array[] = $row["Province_Name"];
             $sub_array[] = $row["Municipality_Name"];
+            $sub_array[] = $row["Sector_Name"];
 
-            $sub_array[] = '<button type="button" onClick="ver(' . $row["Municipality_ID"] . ');" id="' . $row["Municipality_ID"] . '" class="btn btn-inline btn-primary btn-sm ladda-button"><div><i class="fa fa-eye"></i></div></button>';
+            $sub_array[] = '<button type="button" onClick="ver(' . $row["Sector_ID"] . ');" id="' . $row["Sector_ID"] . '" class="btn btn-inline btn-primary btn-sm ladda-button"><div><i class="fa fa-eye"></i></div></button>';
 
             $data[] = $sub_array;
         }
