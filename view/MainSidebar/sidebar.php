@@ -91,6 +91,47 @@
             </ul>
           </li>
           <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-globe-americas"></i>
+              <p>
+                Localizaciones
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../HomeCompanies/" class="nav-link">
+                  <i class="fas fa-building"></i>
+                  <p>Paises</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../HomeFacilities/" class="nav-link">
+                  <i class="fas fa-building"></i>
+                  <p>Ciudades</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../HomeDepartments/" class="nav-link">
+                  <i class="fas fa-building"></i>
+                  <p>Provincias</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../HomeDepartments/" class="nav-link">
+                  <i class="fas fa-building"></i>
+                  <p>Municipios</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../HomeDepartments/" class="nav-link">
+                  <i class="fas fa-building"></i>
+                  <p>Sectores</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
             <a href="../HomeProfessions/" class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
