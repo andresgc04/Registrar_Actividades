@@ -106,7 +106,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../HomeFacilities/" class="nav-link">
+                <a href="../HomeCities/" class="nav-link">
                   <i class="fas fa-city"></i>
                   <p>Ciudades</p>
                 </a>
