@@ -10,7 +10,7 @@ class Connect
         try
         {
             $connect = $this -> dbh = new PDO("mysql:local=localhost;dbname=users_activitiesdb","root","");
-            //$connect = $this -> dbh = mysqli_connect('localhost','id19340456_admin','Ag%04071997/**','id19340456_users_activities');
+            //$connect = $this -> dbh = new PDO("mysql:local=sql200.epizy.com;dbname=epiz_32281032_users_activitiesdb","epiz_32281032","4h6ZpsK0IBadQ5x");
             return $connect;
         }
         catch(Exception $ex)

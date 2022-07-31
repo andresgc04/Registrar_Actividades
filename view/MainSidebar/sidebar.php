@@ -99,6 +99,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="../HomePositions/" class="nav-link">
+              <i class="nav-icon fas fa-columns"></i>
+              <p>
+                Posiciones
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="../HomeRoles/" class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
@@ -107,7 +115,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/kanban.html" class="nav-link">
+            <a href="../HomeStates/" class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
                 Estados
