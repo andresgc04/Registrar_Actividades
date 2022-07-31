@@ -100,32 +100,32 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../HomeCompanies/" class="nav-link">
-                  <i class="fas fa-building"></i>
+                <a href="../HomeCountries/" class="nav-link">
+                  <i class="far fa-flag"></i>
                   <p>Paises</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../HomeFacilities/" class="nav-link">
-                  <i class="fas fa-building"></i>
+                  <i class="fas fa-city"></i>
                   <p>Ciudades</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../HomeDepartments/" class="nav-link">
-                  <i class="fas fa-building"></i>
+                  <i class="fas fa-city"></i>
                   <p>Provincias</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../HomeDepartments/" class="nav-link">
-                  <i class="fas fa-building"></i>
+                  <i class="fas fa-city"></i>
                   <p>Municipios</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="../HomeDepartments/" class="nav-link">
-                  <i class="fas fa-building"></i>
+                  <i class="fas fa-city"></i>
                   <p>Sectores</p>
                 </a>
               </li>
@@ -133,7 +133,7 @@
           </li>
           <li class="nav-item">
             <a href="../HomeProfessions/" class="nav-link">
-              <i class="nav-icon fas fa-columns"></i>
+              <i class="fas fa-user-tie"></i>
               <p>
                 Profesiones
               </p>
@@ -141,7 +141,7 @@
           </li>
           <li class="nav-item">
             <a href="../HomePositions/" class="nav-link">
-              <i class="nav-icon fas fa-columns"></i>
+              <i class="fas fa-chalkboard-teacher"></i>
               <p>
                 Posiciones
               </p>
@@ -149,7 +149,7 @@
           </li>
           <li class="nav-item">
             <a href="../HomeRoles/" class="nav-link">
-              <i class="nav-icon fas fa-columns"></i>
+              <i class="fas fa-user-tag"></i>
               <p>
                 Roles
               </p>
