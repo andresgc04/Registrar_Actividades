@@ -105,9 +105,9 @@ if (isset($_SESSION["User_ID"])) {
         $pdf->Ln(11);
         $pdf->Cell(67, 10, utf8_decode($locationActivity), 0, 1);
         $pdf->Ln(15);
-        $pdf->Cell(400, 10, utf8_decode('Creado Por:'), 0, 0, 'C');
+        $pdf->Cell(400, 10, utf8_decode('_______________________________'), 0, 0, 'C');
         $pdf->Ln(11);
-        $pdf->Cell(400,10,utf8_decode($firstName).' '.utf8_decode($secondName).' '.utf8_decode($firstSurname).' '.utf8_decode($secondSurname),0,0,'C');
+        //$pdf->Cell(400,10,utf8_decode($firstName).' '.utf8_decode($secondName).' '.utf8_decode($firstSurname).' '.utf8_decode($secondSurname),0,0,'C');
         $pdf->Output();
     }
 } else {
